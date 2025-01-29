@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahul Kumar Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Rahul Kumar</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1HU3B2zrs5Oti0fEYrq_H4t8eqpqFeHy-/view?usp=sharing"
+                download
+                class="resume-link"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>Hello, I'm <span>Rahul Kumar</span></h2>
+          <p>
+            A passionate Java developer with experience in building efficient
+            and scalable applications.
+          </p>
+          <a href="#projects" class="btn">View My Work</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Rahul Kumar, a B.Tech student from Dronacharya Group of
+          Institutions with a focus on Java development and web technologies. I
+          specialize in backend development and creating user-centric
+          applications.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <i class="fas fa-code"></i>
+            <h3>Programming Languages</h3>
+            <p>Java, C, JavaScript, SQL</p>
+          </div>
+          <div class="skill">
+            <i class="fas fa-server"></i>
+            <h3>Back-End Development</h3>
+            <p>Spring Boot, JDBC, MySQL</p>
+          </div>
+          <div class="skill">
+            <i class="fas fa-tools"></i>
+            <h3>Tools & Platforms</h3>
+            <p>Git, GitHub, Linux</p>
+          </div>
+          <div class="skill">
+            <i class="fas fa-project-diagram"></i>
+            <h3>Data Structures & Algorithms</h3>
+            <p>Problem Solving, DSA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project">
+            <h3>Resume Builder</h3>
+            <p>
+              A full-stack application using Spring Boot for generating
+              professional resumes based on user input. Integrated LaTeX
+              templates for dynamic generation.
+            </p>
+            <a
+              href="https://github.com/Rahul230501/springbootProj/tree/main/resumeBuilder"
+              class="btn"
+              >View Project</a
+            >
+          </div>
+          <div class="project">
+            <h3>Chatroom App</h3>
+            <p>
+              A real-time chat application using Spring Boot and WebSocket for
+              seamless communication. Includes user authentication and group
+              messaging features.
+            </p>
+            <a
+              href="https://github.com/Rahul230501/springbootProj/tree/main/chatroomapp"
+              class="btn"
+              >View Project</a
+            >
+          </div>
+          <div class="project">
+            <h3>Bank Management System</h3>
+            <p>
+              Developed using Java Swing, JDBC, and MySQL for managing banking
+              operations like account creation, transactions, and fund
+              transfers.
+            </p>
+            <a href="https://github.com/Rahul230501/BankSimulation" class="btn"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="technology" class="section">
+      <div class="container">
+        <h2>Technology</h2>
+        <div class="tech-grid">
+          <div class="tech">
+            <i class="fab fa-java"></i>
+            <p>Java</p>
+          </div>
+          <div class="tech">
+            <i class="fab fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="tech">
+            <i class="fab fa-react"></i>
+            <p>Spring Boot</p>
+          </div>
+          <div class="tech">
+            <i class="fas fa-database"></i>
+            <p>MySQL</p>
+          </div>
+          <div class="tech">
+            <i class="fab fa-git"></i>
+            <p>Git</p>
+          </div>
+          <div class="tech">
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+          </div>
+          <div class="tech">
+            <i class="fab fa-linux"></i>
+            <p>Linux</p>
+          </div>
+          <div class="tech">
+            <i class="fas fa-code-branch"></i>
+            <p>DSA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for any inquiries or collaborations!</p>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/xrbepndd"
+          method="POST"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="reset" class="btn">Reset form</button>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social-links">
+          <a target="_blank" href="https://github.com/Rahul230501"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a target="_blank" href="https://www.linkedin.com/in/rahul-soni-java/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://x.com/Rahul230501"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Rahul Kumar. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
